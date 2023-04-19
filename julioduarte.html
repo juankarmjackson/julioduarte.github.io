@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content= "width=device-width, user-scalable=no">
+	<meta name="referrer" content="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.cdnfonts.com/css/lovelo" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon2.png"/>
+    <title>Julio Duarte | Marketing Digital</title>
+
+    <style>
+        body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.slider{
+    height: 100vh;
+    background-image: url(juliofondo.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.slider h1{
+    font-family: 'Lovelo', sans-serif;
+    font-size: 60px;
+    margin: 0;
+    color: white;
+    filter: drop-shadow(0 2px 5px rgba(59, 204, 30, 0.7));
+}
+
+.slider .title img{
+    width: 600px;
+    filter: drop-shadow(0 -21px 40px rgba(248, 272, 249, 6.7));
+}
+
+.slider p{
+    font-size: 25px;
+}
+
+.title {
+    width: 50%;
+    text-align: center;
+}
+
+.formulario {
+    padding: 10px;
+}
+
+.formulario .form{
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    width: 300px;
+}
+
+.plan {
+    margin: 10px;
+    padding: 10px;
+    background: rgba(225, 225, 225, 0.30);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    position: relative;
+    overflow: hidden;
+}
+
+.form label{
+    padding: 10px;
+    margin: 10px;
+}
+
+.form input{
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+.form textarea{
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+}
+
+.form #inputBoton{
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    width: 100px;
+}
+
+@media (max-width: 750px) {
+    .slider{
+        display: block;
+    }
+    .title {
+        width: 100%;
+        text-align: center;
+    }
+  }
+
+
+  /* SECTION RESULTADOS */
+
+  .resultados{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-resultados{
+    width: 50%;
+    padding: 50px;
+    
+  }
+
+  .video-resultados{
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    
+    
+  }
+
+  .video-resultados .video{
+    background-image: url(crecimiento.gif);
+    background-size: cover;
+    height: 250px;
+    border-radius: 30px;
+  }
+
+
+  /* SECTION LOGOS */
+
+  .informacion h1{
+    text-align: center;
+  }
+
+  .slider2 {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider2 .slide-track {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+}
+
+.slider2 .slide {
+    width: 200px;
+}
+
+.slider2 .slide img {
+    width: 150px;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
+}
+
+
+
+/* SECTION DESARROLLO */
+
+
+.video-desarrollo .video{
+    background-image: url(work.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+.capsula {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/positivenation10.png);
+    background-size: cover;
+}
+
+
+.text-desarrollo {
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+.crms{
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crms img{
+    width: 350px;
+}
+
+/* Contacto */
+
+.contacto{
+    padding: 10px;
+    margin: 10px;
+}
+
+.contacto .form{
+    background: rgba(225, 225, 225, 0.30);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(50px);
+    padding: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contacto .form h1{
+    text-align: center;
+}
+
+.contacto .form .box-preguntas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form input{
+    border: 1px solid black;
+}
+
+.box-preguntas .comentario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.comentario .observaciones{
+    width: 350px;
+    border: 1px solid black;
+}
+
+.comentario #inputBoton2{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(60,183,221,1) 100%);
+    color: white;
+    font-size: 25px;
+    height: 53px;
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.exito{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.slide-exito{
+    width: 350px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    
+}
+
+.fondo-exito{
+    width: 350px;
+    height: 300px;
+}
+
+
+.consultores{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.consultores .consultores-text{
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.consultores .consultores-img{
+    width: 50%;
+    background-image: url(fondojulio3.jpg);
+    background-size: cover;
+    background-position: bottom ;
+    height: 350px;
+    border-radius: 30px;
+}
+
+footer{
+    padding: 10px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(60,183,221,1) 100%);
+    color: white;
+}
+@media (max-width: 1040px) {
+    .crms img{
+        width: 90%;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .title img {
+        width: 50%!important;
+    }
+    .resultados{
+        display: block;
+    }
+    .text-resultados {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .video-resultados {
+        width: 90%;
+        text-align: center;
+    }
+    .capsula{
+        display: block;
+    }
+
+    .text-desarrollo {
+        margin: 10px;
+        padding: 10px;
+        width: 90%;
+    }
+
+    .crms {
+        margin: 10px;
+        padding: 10px;
+        width: 90%;
+    }
+
+    .crms img{
+        margin:auto;
+        width: 90%;
+    }
+
+    .exito{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .slide-exito {
+        margin: auto;
+    }
+
+    .consultores{
+        display: block;
+    }
+
+    .consultores .consultores-text {
+        width: 90%;
+    }
+
+    .consultores .consultores-img {
+        width: 90%;
+        background-size: cover;
+        height: 225px;
+        border-radius: 30px;
+        margin: auto;
+    }
+
+    .comentario .observaciones {
+        width: 90%;
+        margin: auto;
+        border: 1px solid black;
+    }
+    }
+
+    @media (max-width: 500px) {
+        .slider .title img {
+            width: 150px;
+        }
+    }
+
+    
+    </style>
+</head>
+<body>
+    <section class="slider">
+            <div class="title">
+                <img src="julio.png" alt="Easy Approuch | Proposal System">
+            </div>
+            <div class="formulario plan">
+                <div class="form">
+                    <label for="">Nombre Completo</label>
+                    <input type="text" placeholder="Escribe Tu Nombre" id="nombre">
+                    <label for="">Teléfono</label>
+                    <input type="text" id="telefono">
+                    <label for="">Email</label>
+                    <input type="text" id="email">
+                    <label for="">Nombre de Tu Empresa</label>
+                    <input type="text" id="nombreempresa">
+                    <label for="">¿Qué es lo que estás buscando?</label>
+                    <textarea placeholder="Escribe aquí lo que buscas para tu empresa" id="observaciones"></textarea>
+                    <button id="inputBoton">Enviar</button>
+                </div>
+            </div>
+    </section>
+    <section class="resultados">
+        <div class="text-resultados">
+            <h2>El Marketing no es magia, son números.</h2>
+        <p>El momento de enviar una propuesta es fundamental:  <span style="text-decoration: underline; font-weight: bold;"> Una oferta irresistible, bien estructurada , clara y única.</span></p>
+        <p>Una buena propuesta lleva tiempo, para captar un nuevo cliente, el tiempo corre en contra. Debemos hacerlo rápido , bonito , llamativo en un tiempo récord.</p>
+        <p>Con nuestra herramientas aumentarás el número de cierre de clientes.</p>
+        </div>
+        <div class="video-resultados">
+            <div class="video"></div>
+        </div>
+    </section>
+    <section class="informacion">
+        <h1>EXPERTISE</h1>
+        <div class="slider2">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="1.png">
+                </div>
+                <div class="slide">
+                    <img src="2.png">
+                </div>
+                <div class="slide">
+                    <img src="3.png">
+                </div>
+                <div class="slide">
+                    <img src="4.png">
+                </div>
+                <div class="slide">
+                    <img src="5.png">
+                </div>
+                <div class="slide">
+                    <img src="6.png">
+                </div>
+                <div class="slide">
+                    <img src="1.png">
+                </div>
+                <div class="slide">
+                    <img src="2.png">
+                </div>
+                <div class="slide">
+                    <img src="3.png">
+                </div>
+                <div class="slide">
+                    <img src="4.png">
+                </div>
+                <div class="slide">
+                    <img src="5.png">
+                </div>
+                <div class="slide">
+                    <img src="6.png">
+                </div>
+            </div>
+        </div>
+   </section>
+   <section class="desarrollo">
+        <div class="video-desarrollo">
+            <div class="video"></div>
+        </div>
+        <h1 style="text-align: center; min-height: 80px; display: flex; justify-content: center; align-items: center;">MARKETING DE RESULTADOS</h1>
+        <iframe src="https://www.videoask.com/fkacscnko" allow="camera *; microphone *; autoplay *; encrypted-media *; fullscreen *; display-capture *;" width="100%" height="600px" style="border: none; border-radius: 24px"></iframe>
+   </section>
+   <h1 style="text-align: center;">CASOS DE ÉXITO</h1>
+   <section class="exito">
+        <div class="slide-exito">
+            <div class="fondo-exito" style="background-image: url(caso1.png); background-size: cover;"></div>
+            <h2>Inmocall</h2>
+            <p>Creamos un sistema de captación de 10 - 15 Leads al día en el sector de la inmobiliaria, con CRM personalizado a su negocio , con un sistema de presupuestado, un sistema de contratos y un sistema de pagos. <br> <br>
+                Además de formar a su equipo de ventas. En un mes pasó a 30 Leads de alta calidad, 1 reunión, 4 cierres. Una facturación de 20K en ese primer mes.
+            </p>
+        </div>
+        <div class="slide-exito">
+            <div class="fondo-exito" style="background-image: url(caso2.png); background-size: cover;"></div>
+            <h2>Clínica Jesús Rodríguez</h2>
+            <p>Realizamos un marketing omnicanal con un proceso de venta bien estructurado. <br><br>
+               Conseguimos 20 leads al día a un coste de 1€ de media , nuestro sistema filtraba estos clientes para darnos los que realmente son potenciales con poder adquisitivo. <br><br>
+                Se cerraron 5 presupuestos de un valor total de 15.000€ con una inversión en publicidad de 1839€. <br><br>
+            </p>
+        </div>
+        <div class="slide-exito">
+            <div class="fondo-exito" style="background-image: url(amattex.png); background-size: cover;"></div>
+            <h2>Grupo Amattex</h2>
+            <p>Creamos tiendas B2C alrededor de este grupo, que además tiene su propia fábrica textil. Usamos Shopify , Facebook Ads , Google Ads Shopping
+                y Flujos de Email Marketing y SMS , Influencers , es decir estrategias omnicanal.<br><br> El primer año facturó 2.5 Millones en total en todas sus tiendas online.
+            </p>
+        </div>
+   </section>
+   <section class="consultores">
+        <div class="consultores-text">
+            <h1>Consultores Estratégicos</h1>
+            <p>Somos consultores estratégicos, analizamos empresas y creamos las estrategias para obtener los mejores resultados.
+                Planteamos estrategias ya testeadas y probadas. <br> <br>
+                Ejecutamos con los mejores profesionales y obtendrás una comunicación directa con el equipo.
+            </p>
+        </div>
+        <div class="consultores-img"></div>
+   </section>
+   <section class="contacto">
+    <div class="form">
+        <h1>Contáctanos</h1>
+       <div class="box-preguntas">
+        <div class="preguntas">
+            <div>
+                <label for="">Nombre Completo</label> <br>
+                <input type="text" placeholder="Escribe Tu Nombre"> <br>
+                <label for="">Teléfono</label> <br>
+                <input type="text"> <br>
+           </div>
+           <div>
+                <label for="">Nombre de Tu Empresa</label> <br>
+                <input type="text"> <br>
+                <label for="">Web</label> <br>
+                <input type="text">
+           </div>
+       </div>
+        <div class="comentario">
+            <label for="">¿Qué es lo que estás buscando?</label>
+            <textarea placeholder="Escribe aquí lo que buscas para tu empresa" class="observaciones"></textarea>
+            <button id="inputBoton2">Enviar</button>
+        </div>
+       </div>
+    </div>
+</section>
+<footer>
+    <ul>
+        <li>Políticas de Empresa</li>
+        <li>Preguntas Frecuentes</li>
+        <li>Aviso Legal</li>
+    </ul>
+</footer>
+    <script type="module">
+        const inputBoton = document.getElementById('inputBoton');
+console.log(inputBoton);
+
+
+inputBoton.addEventListener('click', function(){
+    const nombre = document.getElementById('nombre').value;
+    const email = document.getElementById('email').value
+    const telefono = document.getElementById('telefono').value;
+    // const nombreempresa = document.getElementById('nombreempresa').value;
+    // const observaciones = document.getElementById('observaciones').value;
+    const hora = new Date();
+    
+
+
+    const username = "username1";
+    const password = "password1";
+
+    $.ajax({
+    url: 'https://presupuestaya-production.up.railway.app/api/leads',
+    type: 'POST',
+    async: false,
+    contentType: 'application/json',
+    dataType: 'jsonp',
+    username: username,
+    password: password,
+    data: JSON.stringify({
+        "nombre": nombre,
+        "telefono": telefono,
+        "email": email,
+        "whatsapp": "none",
+        "llamada": false,
+        "estatus": "no contactado",
+        "fechaCreacion": hora,
+    }),
+
+    // error: function (request, error) {
+    //     console.log(arguments);
+    //     alert(" Can't do because: " + error);
+    // },
+
+    success: function (data) {
+        console.log('okey');
+    }
+
+    })
+
+});
+
+$('#inputBoton2').click(function () {
+    const nombre2 = document.getElementById('nombre2').value;
+    const telefono2 = document.getElementById('telefono2').value;
+    const nombreempresa2 = document.getElementById('nombreempresa2').value;
+    const observaciones2 = document.getElementById('observaciones2').value;
+    const tipoDeNegocio2 = "Agencia de Marketing";
+
+
+    const username = "username1";
+    const password = "password1";
+
+    $.ajax({
+    url: `https://presupuestaya-production.up.railway.app/api/leads`,
+    type: 'POST',
+    async: false,
+    contentType: 'application/json',
+    dataType: 'jsonp',
+    username: username,
+    password: password,
+    data: JSON.stringify({
+        "nombre": nombre2,
+        "telefono": telefono2,
+        "email": nombreempresa2,
+        "tipoDeNegocio": tipoDeNegocio2,
+        "mensaje": observaciones2
+    }),
+    success: function (data) {
+        console.log('okey');
+    }
+
+    })
+
+});
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   
+
+</body>
+</html>
